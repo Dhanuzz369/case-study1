@@ -7,3 +7,31 @@
     font-family: 'Inter', sans-serif;
   }
 }
+
+@media (max-width: 768px) {
+  section {
+    padding: 16px !important;
+  }
+
+  .grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  .text-5xl, .text-6xl, .text-7xl, .text-8xl {
+    font-size: 2rem !important;
+    line-height: 2.5rem !important;
+  }
+
+  .h-80, .h-[500px] {
+    height: auto !important;
+  }
+
+  .w-80 {
+    width: 100% !important;
+  }
+
+  .rounded-3xl, .rounded-2xl {
+    border-radius: 1rem !important;
+  }
+}

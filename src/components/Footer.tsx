@@ -29,23 +29,7 @@ export default function Footer() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <motion.button
-              className="px-8 py-4 bg-[#CCFF00] text-black font-bold rounded-full text-lg flex items-center gap-3 hover:bg-[#b8e600] transition-colors"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <ExternalLink className="w-5 h-5" />
-              View Live Prototype
-            </motion.button>
-
-            <motion.button
-              className="px-8 py-4 bg-zinc-900 border border-zinc-800 text-white font-bold rounded-full text-lg flex items-center gap-3 hover:bg-zinc-800 transition-colors"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <Github className="w-5 h-5" />
-              View GitHub
-            </motion.button>
+            {/* Removed View Live Prototype and View GitHub buttons */}
           </motion.div>
 
           <motion.div
@@ -58,6 +42,33 @@ export default function Footer() {
             <p className="text-zinc-600 text-sm">
               © 2026 RetailOS Case Study. Built with Next.js, PocketBase, and Porter API.
             </p>
+            <div className="text-center space-y-4 mt-8">
+              <p className="text-lg text-zinc-400">Designed and Developed by Dhanush Mani</p>
+              <div className="flex justify-center space-x-4">
+                <a
+                  href="https://github.com/Dhanuzz369"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 bg-zinc-800 text-white rounded-lg hover:bg-zinc-700 transition"
+                >
+                  View GitHub
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/dhanush369/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-500 transition"
+                >
+                  LinkedIn
+                </a>
+                <a
+                  href="mailto:dhanuzh369@gmail.com"
+                  className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-500 transition"
+                >
+                  Email Me
+                </a>
+              </div>
+            </div>
           </motion.div>
         </motion.div>
       </div>

@@ -64,8 +64,13 @@ export default function Hero() {
             <div className="bg-gradient-to-br from-zinc-800 to-zinc-900 rounded-3xl p-8 border border-zinc-700 shadow-2xl backdrop-blur-xl">
               <div className="bg-zinc-950 rounded-2xl h-[600px] flex flex-col items-center justify-center relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-br from-[#CCFF00]/10 to-transparent"></div>
-                <Smartphone className="w-24 h-24 text-[#CCFF00] mb-4" strokeWidth={1} />
-                <div className="text-zinc-600 text-lg font-medium">Hero iPhone Mockup</div>
+                <div className="relative w-[300px] h-[600px] bg-black rounded-[50px] border-[14px] border-black overflow-hidden">
+                  <img
+                    src="/images/image.png"
+                    alt="A high-fidelity mobile UI screenshot for a premium streetwear fashion brand's homepage"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
               </div>
             </div>
             <div className="absolute -z-10 inset-0 bg-[#CCFF00]/20 blur-3xl"></div>

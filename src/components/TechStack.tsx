@@ -109,6 +109,29 @@ export default function TechStack() {
             </div>
           </motion.div>
         </div>
+
+        <div className="mt-16">
+          <motion.h3
+            className="text-4xl font-bold mb-8 text-[#CCFF00]"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            Challenges & Debugging
+          </motion.h3>
+          <motion.div
+            className="bg-zinc-950 border border-zinc-800 rounded-2xl p-10"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
+            <p className="text-xl text-zinc-300 leading-relaxed">
+              <strong>Handling API Failures:</strong> Porter API would sometimes timeout during peak traffic. To address this, a <span className="text-[#CCFF00] font-semibold">retry mechanism</span> was implemented, along with a fallback to <span className="text-[#CCFF00] font-semibold">Standard Delivery</span> if the API didn’t respond within 3 seconds. This ensured the checkout process never crashed.
+            </p>
+          </motion.div>
+        </div>
       </div>
     </section>
   );

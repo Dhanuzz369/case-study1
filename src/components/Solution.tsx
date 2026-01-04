@@ -72,10 +72,19 @@ export default function Solution() {
                   transition={{ duration: 0.3 }}
                 >
                   <div className="relative bg-gradient-to-br from-zinc-900 to-zinc-950 border border-zinc-800 rounded-3xl p-8 overflow-hidden">
-                    <div className="bg-zinc-950 rounded-2xl h-80 flex flex-col items-center justify-center relative">
+                    <div className="bg-zinc-950 rounded-2xl w-80 h-[500px] flex flex-col items-center justify-center relative">
                       <div className={`absolute inset-0 bg-gradient-to-br ${feature.color} opacity-5`}></div>
-                      <ImageIcon className={`w-20 h-20 bg-gradient-to-br ${feature.color} bg-clip-text text-transparent mb-4`} strokeWidth={1} />
-                      <div className="text-zinc-600 text-lg font-medium">{feature.imageLabel}</div>
+                      <img
+                        src={
+                          feature.imageLabel === 'Split Delivery UI'
+                            ? '/images/delivery ui.png'
+                            : feature.imageLabel === 'Pricing Toggle UI'
+                            ? '/images/price toggle ui.png'
+                            : '/images/admin flow ui.png'
+                        }
+                        alt={feature.imageLabel}
+                        className="w-full h-full object-contain rounded-2xl"
+                      />
                     </div>
                   </div>
                   <div className={`absolute -z-10 inset-0 bg-gradient-to-br ${feature.color} opacity-20 blur-3xl`}></div>
