@@ -68,7 +68,7 @@ export default function Hero() {
                   <img
                     src="/images/image.png"
                     alt="A high-fidelity mobile UI screenshot for a premium streetwear fashion brand's homepage"
-                    className="w-full h-full object-contain"
+                    className="w-full h-full object-contain rounded-2xl"
                   />
                 </div>
               </div>
