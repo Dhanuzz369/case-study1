@@ -77,10 +77,10 @@ export default function Solution() {
                       <img
                         src={
                           feature.imageLabel === 'Split Delivery UI'
-                            ? '/public/images/delivery ui.png'
+                            ? '/images/delivery ui.png'
                             : feature.imageLabel === 'Pricing Toggle UI'
-                            ? '/public/images/price toggle ui.png'
-                            : '/public/images/admin flow ui.png'
+                            ? '/images/price toggle ui.png'
+                            : '/images/admin flow ui.png'
                         }
                         alt={feature.imageLabel}
                         className="w-full h-full object-contain rounded-2xl"
